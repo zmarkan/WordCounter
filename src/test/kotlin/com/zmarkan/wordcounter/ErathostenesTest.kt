@@ -3,7 +3,6 @@ package com.zmarkan.wordcounter
 import org.junit.Assert
 import org.junit.Test
 
-
 class ErathostenesTest {
 
     @Test fun calculateSieveOfErathostenes() {

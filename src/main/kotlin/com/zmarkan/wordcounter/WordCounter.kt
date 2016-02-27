@@ -1,34 +1,25 @@
 package com.zmarkan.wordcounter
 
 import java.io.File
-import java.util.*
 
-//
 fun main(args: Array<String>){
-    //read file to lines - here
-    //split lines to words - lineReader
-    //map words that occur
-    //sort and output by occurence
-    //have erathostenes to optimise reduction now
-    //TODO: Reduce
-    //TODO: bask in glory
 
-    //Reading files
-    //Assume words are not split between the lines so we can just read lines
-    //TODO: have some easily configurable repository of files etc
-    val file = File("assets/Railway-Children-by-E-Nesbit.txt")
+    val lineReader = LineReader()
+    val wordMapper = WordMapper()
+    val erathostenes = Erathostenes(SIEVE_SIZE)
 
-    println(file.absolutePath)
+    val file = File(SHERLOCK)
+    file.readLines().forEach { wordMapper.addList(lineReader.readLine(it)) }
 
+    println("Word by occurence:")
+    wordMapper.getWordsByOccurence().forEach {
+        println(String.format(
+                "Word: %s Occurrences: %d isPrimeNumber: %b",
+                it.first,
+                it.second,
+                it.second.isPrime(erathostenes.sieve)));
+    }
 
-
-
-    //now we have a bunch of strings
-//    for (line in file.readLines()){
-//        println(line)
-//    }
-
-//    val sieve = Erathostenes().setupSieve()
-//    sieve.forEach { element -> println(element) }
-
+    //TODO: optimisation idea #1: skip calculation when items have the same number of occurrences
+    //TODO: optimisation idea #2: split the map and run on different machines in parallel. Merge results in the end
 }
