@@ -8,7 +8,8 @@ fun main(args: Array<String>){
     //read file to lines - here
     //split lines to words - lineReader
     //map words that occur
-    //TODO: sort and output by occurence
+    //sort and output by occurence
+    //have erathostenes to optimise reduction now
     //TODO: Reduce
     //TODO: bask in glory
 
@@ -20,11 +21,12 @@ fun main(args: Array<String>){
     println(file.absolutePath)
 
 
+
+
     //now we have a bunch of strings
 //    for (line in file.readLines()){
 //        println(line)
 //    }
-    println("hebote")
 
 //    val sieve = Erathostenes().setupSieve()
 //    sieve.forEach { element -> println(element) }

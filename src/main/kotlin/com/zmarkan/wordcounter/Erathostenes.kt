@@ -16,6 +16,5 @@ class Erathostenes(sieveSize: Int) {
         }
 
         return values.indices.filter { index -> index >= 2 && values[index] }
-
     }
 }
