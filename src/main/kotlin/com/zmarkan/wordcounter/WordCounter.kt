@@ -21,8 +21,12 @@ fun main(args: Array<String>){
 
 
     //now we have a bunch of strings
-    for (line in file.readLines()){
-        println(line)
-    }
+//    for (line in file.readLines()){
+//        println(line)
+//    }
+    println("hebote")
+
+//    val sieve = Erathostenes().setupSieve()
+//    sieve.forEach { element -> println(element) }
 
 }
