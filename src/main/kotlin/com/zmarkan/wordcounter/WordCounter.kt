@@ -7,7 +7,8 @@ import java.util.*
 fun main(args: Array<String>){
     //read file to lines - here
     //split lines to words - lineReader
-    //TODO: Map
+    //map words that occur
+    //TODO: sort and output by occurence
     //TODO: Reduce
     //TODO: bask in glory
 
