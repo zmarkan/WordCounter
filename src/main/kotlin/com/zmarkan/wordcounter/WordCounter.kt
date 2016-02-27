@@ -1,9 +1,12 @@
+package com.zmarkan.wordcounter
+
 import java.io.File
 import java.util.*
 
 //
 fun main(args: Array<String>){
-    //TODO: read file
+    //read file to lines - here
+    //split lines to words - lineReader
     //TODO: Map
     //TODO: Reduce
     //TODO: bask in glory
